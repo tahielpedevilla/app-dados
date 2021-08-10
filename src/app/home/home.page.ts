@@ -1,3 +1,4 @@
+import { AppComponent } from './../app.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +8,17 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  img1 = '../../assets/img/dice1.png';
+  img2 = '../../assets/img/dice2.png';
+
+  constructor() { }
+
+  tirarDados() {
+    const numero1 = Math.floor(Math.random() * 6) + 1;
+    const numero2 = Math.floor(Math.random() * 6) + 1;
+
+    this.img1 = '../../assets/img/dice' + numero1 + '.png';
+    this.img2 = '../../assets/img/dice' + numero2 + '.png';
+  }
 
 }

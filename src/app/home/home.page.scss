@@ -8,20 +8,15 @@
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-content {
+  --ion-background-color: rgb(31, 31, 31);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.img-dados {
+  height: 50%;
 }
 
-#container a {
-  text-decoration: none;
+.boton-tirar {
+  margin: 20px;
+  margin-top: 120px;
 }
